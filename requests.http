@@ -1,0 +1,32 @@
+GET HTTP://localhost:3000/products
+Content-Type: application/json
+
+###
+GET HTTP://localhost:3000/products/3
+Content-Type: application/json
+
+###
+POST HTTP://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Trampoline",
+  "description": "Bouncy, terribly so.",
+  "price": 440
+}
+
+###
+PATCH HTTP://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "name": "Rock",
+  "description": "Really hard, the first weapon.",
+  "price": 15
+}
+
+###
+DELETE HTTP://localhost:3000/products/1
+Content-Type: application/json
+
+
