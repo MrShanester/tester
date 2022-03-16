@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   post "/products" => "products#create"
   patch "/products/:id" => "products#update"
   delete "/products/:id" => "products#destroy"
+
+  get "/contacts" => "contacts#index"
+  post "/contacts" => "contacts#create"
+  get "/contacts/test" => "contacts#test"
 end

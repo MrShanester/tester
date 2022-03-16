@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
   def create
     product = Product.new(name: params[:name], description: params[:description], price: params[:price])
 
-    render json: product.as_json if product.save
+    render json: product.as_json
   end
 
   def update
@@ -30,8 +30,8 @@ class ProductsController < ApplicationController
   def destroy
     product = Product.find_by id: params[:id]
 
-    product.delete
-    
+    product.destroy
+
     render json: {message: "Product Annihilated"} 
   end
 end

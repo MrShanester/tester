@@ -26,7 +26,23 @@ Content-Type: application/json
 }
 
 ###
-DELETE HTTP://localhost:3000/products/1
+DELETE HTTP://localhost:3000/products/2
 Content-Type: application/json
 
 
+### 
+GET HTTP://localhost:3000/contacts
+Content-Type: application/json
+
+###
+POST HTTP://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "name": "Billy Bob",
+  "adress": "491 4th Ave, Chester, CA, USA"
+}
+
+###
+get HTTP://localhost:3000/contacts/test
+Content-Type: application/json

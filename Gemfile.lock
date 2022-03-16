@@ -75,6 +75,7 @@ GEM
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
+    geocoder (1.7.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
     http (5.0.4)
@@ -168,6 +169,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  geocoder
   http
   listen (~> 3.3)
   pg (~> 1.1)
